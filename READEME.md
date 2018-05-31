@@ -21,3 +21,8 @@ diverse: đa dạng, phong phú
 #https://damp-shelf-61146.herokuapp.com/ | #https://git.heroku.com/damp-shelf-61146.git
 
 git remote add heroku https://git.heroku.com/damp-shelf-61146.git
+
+# heroku login
+# heroku create
+# git remote add heroku (url)
+# git push heroku master
