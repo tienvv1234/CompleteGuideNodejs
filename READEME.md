@@ -15,3 +15,7 @@ diverse: đa dạng, phong phú
 - express: library that runs in the node runtime. has helpers to make dealing with http traffic easier
 
 #Deploy heroku.com
+
+#D:\project\Complete Guide Node js>heroku create
+#Creating app... done, ⬢ damp-shelf-61146
+#https://damp-shelf-61146.herokuapp.com/ | #https://git.heroku.com/damp-shelf-61146.git
