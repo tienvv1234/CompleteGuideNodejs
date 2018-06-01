@@ -26,3 +26,9 @@ git remote add heroku https://git.heroku.com/damp-shelf-61146.git
 # heroku create
 # git remote add heroku (url)
 # git push heroku master
+
+#authentication google
+#npm install --save passport passport-google-oahth20 (create clientId, and clieentSecret in console.developers.google.com)
+
+clientID - public token - we can share this with the public
+clientSecret - private token - we don't want anyone to see this
