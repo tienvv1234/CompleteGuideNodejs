@@ -7,6 +7,14 @@ aspect: khía cạnh, tình trạn, diện mạo,
 hypothetical: giả định,
 outright: ngay, tròn vẹn , 1 lần nữa, không giấy giếm
 diverse: đa dạng, phong phú
+particular : cụ thể
+assumption: giả bộ, giả đinh
+established: thành lập
+for the sake of discussion : vì lợi ích của cuộc thảo luận
+to record the fact : để ghi lại thực tế
+accurate: chính xác
+instantly: ngay lập tức
+likewise: tương tự như vậy
 # main theory
 - build single project 
 
@@ -32,3 +40,5 @@ git remote add heroku https://git.heroku.com/damp-shelf-61146.git
 
 clientID - public token - we can share this with the public
 clientSecret - private token - we don't want anyone to see this
+
+#Mongo DB (using Mongoose library for connection)
