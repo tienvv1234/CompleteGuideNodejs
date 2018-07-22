@@ -1,8 +1,25 @@
 # lecture 4 new word
-preamble: lời nói đầu 
-handful of : số ít
-rather: khá, 1 chút, hơn, hơi hơi
-tremendous: to lơn, phi thường
+preamble(nous): lời nói đầu 
+ex: `The preamble of the book talks about the technique of java.`
+handful of(nous) : (một) năm, (một) nhúm, ít (có đếm được) 
+ex: `i get a handful of data from the system`
+rather (adverb : `trạng từ`): khá, 1 chút, hơn, hơi hơi
+-identify :
+1. - `có than so sánh 2 cụm thích cái gì hơn`
+ex: i want to create new the database rather than backup the old database
+2. - `nói để chính xác hơn đúng hơn là`
+ex: these data are wrong, but rather miss the title.
+3. - `phần nào, hơn, khá, đến 1 mức độ nào đó`
+ex: this bug is rather critical
+tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
+- identify:
+1. `great in amount, size, or degree; extremely large` transalate :
+ex: She is under tremendous pressure at work --> `cô ấy đang chịu(ở dưới/dưới áp lực) áp lục lớn trong công việc`
+- i am working on tremendous project with many algorithm
+2. (thông tục) rất lớn, bao la, to lớn, rất tốt, khác thường
+ex: 
+
+pressure: áp lực
 aspect: khía cạnh, tình trạn, diện mạo,
 hypothetical: giả định,
 outright: ngay, tròn vẹn , 1 lần nữa, không giấu giếm
@@ -26,13 +43,27 @@ identical: giống nhau,
 arbitrary: tùy ý, tùy biến
 treat: tiếp đãi, coi như là (is should treat it like a string: dịch nó nên đc tiếp đãi như là 1 string)
 fit: phù hợp (as we see fit chúng ta cảm thấy phù hợp)
+ourselves: chính chúng ta,
+persist: tồn tại(token that we want to persist into our user record),
+dive in: lặn trong, đi sâu vào (it just kind of dive in),
+traditional: truyền thống
+--------------------------------------------
+section 4 lecture 37
+essentially: bản chất (it will esentially initiate that query)
+reach out: tiếp cận (any time we reach out our mongo database)
+shape: hình dạng (in any way shape or form)
+form: hình thưc
+--------------------------------------------
+section 4 lecture 38
+precise: tóm lược (to be precise:để đc chính xác)
+
 # main theory
 - build single project 
 
 # Relationship of Node and Express
 - Node : javascript runtime used to execute code outside of the browser
 - express: library that runs in the node runtime. has helpers to make dealing with http traffic easier
-
+- explicitly: rõ ràng
 #Deploy heroku.com
 
 #D:\project\Complete Guide Node js>heroku create
@@ -54,6 +85,8 @@ clientSecret - private token - we don't want anyone to see this
 
 #Mongo DB (using Mongoose library for connection)
 
+for run this project `npm run dev`
+
 #Set Up MongoDb: 
 - `there're two different ways`
 go to mlab.com to create mongo db remote `{user: "tienvv", account: "tienvv" }` 
@@ -61,8 +94,20 @@ go to mlab.com to create mongo db remote `{user: "tienvv", account: "tienvv" }`
 - install mongoose `npm install --save mongoose`
 mongoose.connect()
 
+- model class is Collection, model instance is a record
+
 `const { Schema } = mongoose; same here const Scheme = mongoose.Schema; completely equal` --> es 2015 
+
+`useMongoClient:true` option is no longer necessary in mongoose 5.x, please remove it
+
+note: the model class must be loaded before we use it 
+- here is create `mongoose.model('users', userSchema);`
+- here is get `const User = mongoose.model('users');`
 
 mongoose.model('users'. userSchema); `note` 
 - mongoose chỉ tạo khi nó không tồn tại nếu tồn tại rồi sẽ lấy ra
 Schema có thể add thêm property mà không lo gì cả
+
+- khi ta tiếp cận mongo database bằng bất kỳ hình thức nào như search hay or save or edit or delete thì nó sẽ tạo ra 1 asynchronous action và query sẽ trả về 1 promise 
+
+#advenced feature of javascript that include in es 2017: .then(() => {}) arrow function
