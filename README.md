@@ -11,15 +11,15 @@ ex: i want to create new the database rather than backup the old database
 ex: these data are wrong, but rather miss the title.
 - `phần nào, hơn, khá, đến 1 mức độ nào đó`
 ex: this bug is rather critical
-#tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
+4.tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
 - identify:
-1. `great in amount, size, or degree; extremely large` transalate :
+- `great in amount, size, or degree; extremely large` transalate :
 ex: She is under tremendous pressure at work --> `cô ấy đang chịu(ở dưới/dưới áp lực) áp lục lớn trong công việc`
 - i am working on tremendous project with many algorithm
-2. (thông tục) rất lớn, bao la, to lớn, rất tốt, khác thường
+- (thông tục) rất lớn, bao la, to lớn, rất tốt, khác thường
 ex: 
 
-#pressure(Noun)
+5.pressure(Noun)
 (Force): lực lượng, thế lực
 - Identify: áp suất, sức ép, 
 - sức ép bị đe dọa đến cá nhân hoặc tổ chức
@@ -32,34 +32,34 @@ ex: i am under a lot of pressure at work
 - worry and fear caused(gây ra) bới cảm giác bạn có quá nhiều trách nhiệm và quan tâm
 ex:i have a lot of pressure when i am working on powergate company
 
-#aspect(noun): khía cạnh, tình trạng, diện mạo,
+6.aspect(noun): khía cạnh, tình trạng, diện mạo,
 -identify: a particular feature of or way of thinking about something, esp. something complicated
 ex: there is another aspect of your problem that you are right.
 
-#hypothetical(adjective): giả định, giả thuyết
+#7.ypothetical(adjective): giả định, giả thuyết
 
-#outright(advert): ngay lập tực, toàn bộ, hoàn toàn
+8.outright(advert): ngay lập tực, toàn bộ, hoàn toàn
 identify:`directly and plainly, or immediately instead of stages`
 -They bought their car outright.
 -I told him outright that I think he is making a mistake.
 
-#diverse (adjective): đa dạng, phong phú
+9.diverse (adjective): đa dạng, phong phú
 -the information technology has diverse job
 
-#particular(adjective) : cụ thể
+10.particular(adjective) : cụ thể
 Identify `special`
 - in this particualr case
 `careful`
 - She’s very particular about what she eats.
 
-#assumption(Noun): giả bộ, giả đinh
+11.assumption(Noun): giả bộ, giả đinh
 `Accepting as true`
 -The plan was based on the assumption that the schedule could be substantially speeded up by adding more people.
 `Control`, assumption of something: làm ra vẻ, sự giả bộ, sự đảm đương, sự gánh vác, sự nhận vào mình
 - Her assumption (sự đảm đương) of the post of ambassador was a significant development.
 - the Assumption (tôn giáo)
 - 
-#established: thành lập
+12.established: thành lập
 
 -wrecked: đắm, thất bại
 -skimmed: gầy, đi lướt qua, đi sát qua, gạt chất kem ở sữa, hớt bọt
