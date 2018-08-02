@@ -366,3 +366,95 @@
 2018-07-22T15:07:51.724Z - debug:  [12840] TFVC errors (via stderr): Unable to determine the workspace. You may be able to correct this by running 'tf workspaces /collection:TeamProjectCollectionUrl'.
 
 2018-07-22T15:07:51.724Z - error:  [12840] Execution of the TFVC command line failed unexpectedly.
+2018-07-23T16:25:59.924Z - info:   [03476] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs ***
+2018-07-23T16:25:59.926Z - info:   [03476] VSTSVSCode/1.136.0 (VSCode 1.25.1; Windows_NT 10.0.17134; Node 7.9.0)
+2018-07-23T16:25:59.927Z - debug:  [03476] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-23T16:25:59.927Z - debug:  [03476] No External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-23T16:25:59.967Z - debug:  [03476] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-23T16:25:59.968Z - debug:  [03476] TFVC Creating Tfvc object with localPath='undefined'
+2018-07-23T16:25:59.968Z - debug:  [03476] Using TFS proxy: 
+2018-07-23T16:25:59.968Z - debug:  [03476] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe'
+2018-07-23T16:25:59.969Z - debug:  [03476] TFVC Repository created with repositoryRootFolder='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-07-23T16:25:59.969Z - debug:  [03476] TFVC Repository.CheckVersion
+2018-07-23T16:25:59.970Z - debug:  [03476] TFVC: tf add -noprompt -?
+2018-07-23T16:25:59.978Z - debug:  [03476] TFVC: spawned new process (duration: 6ms)
+2018-07-23T16:25:59.984Z - debug:  [03476] TFVC: spawned new process (duration: 5ms)
+2018-07-23T16:26:00.748Z - debug:  [03476] TFVC: add exit code: 0 (duration: 777ms)
+2018-07-23T16:26:00.750Z - debug:  [03476] TFVC Minimum required version: 14.102.0
+2018-07-23T16:26:00.750Z - debug:  [03476] TFVC (TF.exe, TF.cmd) version: 15.112.26421.0
+2018-07-23T16:26:00.751Z - debug:  [03476] TFVC Repository.FindWorkspace with localPath='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-07-23T16:26:00.751Z - debug:  [03476] TFVC: tf workfold -noprompt c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-23T16:26:00.754Z - debug:  [03476] TFVC: spawned new process (duration: 3ms)
+2018-07-23T16:26:01.253Z - debug:  [03476] TFVC: workfold exit code: 100 (duration: 502ms)
+2018-07-23T16:26:01.255Z - debug:  [03476] TFVC errors (via stderr): Unable to determine the workspace. You may be able to correct this by running 'tf workspaces /collection:TeamProjectCollectionUrl'.
+
+2018-07-23T16:26:01.255Z - error:  [03476] Execution of the TFVC command line failed unexpectedly.
+2018-07-28T14:49:13.208Z - info:   [09068] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs ***
+2018-07-28T14:49:13.210Z - info:   [09068] VSTSVSCode/1.136.0 (VSCode 1.25.1; Windows_NT 10.0.17134; Node 7.9.0)
+2018-07-28T14:49:13.211Z - debug:  [09068] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-28T14:49:13.212Z - debug:  [09068] No External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-28T14:49:13.315Z - debug:  [09068] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-28T14:49:13.316Z - debug:  [09068] TFVC Creating Tfvc object with localPath='undefined'
+2018-07-28T14:49:13.316Z - debug:  [09068] Using TFS proxy: 
+2018-07-28T14:49:13.316Z - debug:  [09068] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe'
+2018-07-28T14:49:13.374Z - debug:  [09068] TFVC Repository created with repositoryRootFolder='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-07-28T14:49:13.375Z - debug:  [09068] TFVC Repository.CheckVersion
+2018-07-28T14:49:13.376Z - debug:  [09068] TFVC: tf add -noprompt -?
+2018-07-28T14:49:13.483Z - debug:  [09068] TFVC: spawned new process (duration: 106ms)
+2018-07-28T14:49:13.487Z - debug:  [09068] TFVC: spawned new process (duration: 3ms)
+2018-07-28T14:49:15.043Z - debug:  [09068] TFVC: add exit code: 0 (duration: 1667ms)
+2018-07-28T14:49:15.044Z - debug:  [09068] TFVC Minimum required version: 14.102.0
+2018-07-28T14:49:15.044Z - debug:  [09068] TFVC (TF.exe, TF.cmd) version: 15.112.26421.0
+2018-07-28T14:49:15.045Z - debug:  [09068] TFVC Repository.FindWorkspace with localPath='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-07-28T14:49:15.045Z - debug:  [09068] TFVC: tf workfold -noprompt c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-28T14:49:15.047Z - debug:  [09068] TFVC: spawned new process (duration: 2ms)
+2018-07-28T14:49:15.642Z - debug:  [09068] TFVC: workfold exit code: 100 (duration: 597ms)
+2018-07-28T14:49:15.644Z - debug:  [09068] TFVC errors (via stderr): Unable to determine the workspace. You may be able to correct this by running 'tf workspaces /collection:TeamProjectCollectionUrl'.
+
+2018-07-28T14:49:15.644Z - error:  [09068] Execution of the TFVC command line failed unexpectedly.
+2018-07-31T15:23:39.537Z - info:   [06592] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs ***
+2018-07-31T15:23:39.539Z - info:   [06592] VSTSVSCode/1.136.0 (VSCode 1.25.1; Windows_NT 10.0.17134; Node 7.9.0)
+2018-07-31T15:23:39.539Z - debug:  [06592] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-31T15:23:39.540Z - debug:  [06592] No External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-31T15:23:39.577Z - debug:  [06592] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-31T15:23:39.577Z - debug:  [06592] TFVC Creating Tfvc object with localPath='undefined'
+2018-07-31T15:23:39.578Z - debug:  [06592] Using TFS proxy: 
+2018-07-31T15:23:39.578Z - debug:  [06592] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe'
+2018-07-31T15:23:39.578Z - debug:  [06592] TFVC Repository created with repositoryRootFolder='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-07-31T15:23:39.579Z - debug:  [06592] TFVC Repository.CheckVersion
+2018-07-31T15:23:39.580Z - debug:  [06592] TFVC: tf add -noprompt -?
+2018-07-31T15:23:39.595Z - debug:  [06592] TFVC: spawned new process (duration: 14ms)
+2018-07-31T15:23:39.599Z - debug:  [06592] TFVC: spawned new process (duration: 4ms)
+2018-07-31T15:23:41.165Z - debug:  [06592] TFVC: add exit code: 0 (duration: 1585ms)
+2018-07-31T15:23:41.167Z - debug:  [06592] TFVC Minimum required version: 14.102.0
+2018-07-31T15:23:41.168Z - debug:  [06592] TFVC (TF.exe, TF.cmd) version: 15.112.26421.0
+2018-07-31T15:23:41.168Z - debug:  [06592] TFVC Repository.FindWorkspace with localPath='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-07-31T15:23:41.169Z - debug:  [06592] TFVC: tf workfold -noprompt c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-07-31T15:23:41.172Z - debug:  [06592] TFVC: spawned new process (duration: 3ms)
+2018-07-31T15:23:41.729Z - debug:  [06592] TFVC: workfold exit code: 100 (duration: 560ms)
+2018-07-31T15:23:41.732Z - debug:  [06592] TFVC errors (via stderr): Unable to determine the workspace. You may be able to correct this by running 'tf workspaces /collection:TeamProjectCollectionUrl'.
+
+2018-07-31T15:23:41.732Z - error:  [06592] Execution of the TFVC command line failed unexpectedly.
+2018-08-02T15:44:09.576Z - info:   [08116] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs ***
+2018-08-02T15:44:09.579Z - info:   [08116] VSTSVSCode/1.136.0 (VSCode 1.25.1; Windows_NT 10.0.17134; Node 7.9.0)
+2018-08-02T15:44:09.580Z - debug:  [08116] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-08-02T15:44:09.581Z - debug:  [08116] No External Context at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-08-02T15:44:09.613Z - debug:  [08116] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-08-02T15:44:09.613Z - debug:  [08116] TFVC Creating Tfvc object with localPath='undefined'
+2018-08-02T15:44:09.614Z - debug:  [08116] Using TFS proxy: 
+2018-08-02T15:44:09.614Z - debug:  [08116] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe'
+2018-08-02T15:44:09.615Z - debug:  [08116] TFVC Repository created with repositoryRootFolder='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-08-02T15:44:09.616Z - debug:  [08116] TFVC Repository.CheckVersion
+2018-08-02T15:44:09.617Z - debug:  [08116] TFVC: tf add -noprompt -?
+2018-08-02T15:44:09.626Z - debug:  [08116] TFVC: spawned new process (duration: 8ms)
+2018-08-02T15:44:09.631Z - debug:  [08116] TFVC: spawned new process (duration: 4ms)
+2018-08-02T15:44:10.925Z - debug:  [08116] TFVC: add exit code: 0 (duration: 1307ms)
+2018-08-02T15:44:10.926Z - debug:  [08116] TFVC Minimum required version: 14.102.0
+2018-08-02T15:44:10.926Z - debug:  [08116] TFVC (TF.exe, TF.cmd) version: 15.112.26421.0
+2018-08-02T15:44:10.927Z - debug:  [08116] TFVC Repository.FindWorkspace with localPath='c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs'
+2018-08-02T15:44:10.928Z - debug:  [08116] TFVC: tf workfold -noprompt c:\Users\Admins\Desktop\learning node js\Project\CompleteGuideNodejs
+2018-08-02T15:44:10.931Z - debug:  [08116] TFVC: spawned new process (duration: 3ms)
+2018-08-02T15:44:11.613Z - debug:  [08116] TFVC: workfold exit code: 100 (duration: 685ms)
+2018-08-02T15:44:11.615Z - debug:  [08116] TFVC errors (via stderr): Unable to determine the workspace. You may be able to correct this by running 'tf workspaces /collection:TeamProjectCollectionUrl'.
+
+2018-08-02T15:44:11.616Z - error:  [08116] Execution of the TFVC command line failed unexpectedly.

@@ -11,7 +11,7 @@ const User = mongoose.model('users');
 passport.serializeUser((user, done) => {
     // user in here is the user from passport (GoogleStrategy), in done function and the done have arguments the first is if some thing wrong, the section is result we want to pass
     //this function will create the identify token with user.id and return to client for save to cookie
-    console.log("serializeUser ", user);
+    console.log("serializeUser  ", user);
 
     done(null, user.id);
 })

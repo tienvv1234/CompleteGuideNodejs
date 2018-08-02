@@ -1,9 +1,9 @@
 # lecture 4 new word
-preamble(nous): lời nói đầu 
+#preamble(nous): lời nói đầu 
 ex: `The preamble of the book talks about the technique of java.`
-handful of(nous) : (một) năm, (một) nhúm, ít (có đếm được) 
+#handful of(nous) : (một) năm, (một) nhúm, ít (có đếm được) 
 ex: `i get a handful of data from the system`
-rather (adverb : `trạng từ`): khá, 1 chút, hơn, hơi hơi
+#rather (adverb : `trạng từ`): khá, 1 chút, hơn, hơi hơi
 -identify :
 1. - `có than so sánh 2 cụm thích cái gì hơn`
 ex: i want to create new the database rather than backup the old database
@@ -11,7 +11,7 @@ ex: i want to create new the database rather than backup the old database
 ex: these data are wrong, but rather miss the title.
 3. - `phần nào, hơn, khá, đến 1 mức độ nào đó`
 ex: this bug is rather critical
-tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
+#tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
 - identify:
 1. `great in amount, size, or degree; extremely large` transalate :
 ex: She is under tremendous pressure at work --> `cô ấy đang chịu(ở dưới/dưới áp lực) áp lục lớn trong công việc`
@@ -19,14 +19,52 @@ ex: She is under tremendous pressure at work --> `cô ấy đang chịu(ở dư�
 2. (thông tục) rất lớn, bao la, to lớn, rất tốt, khác thường
 ex: 
 
-pressure: áp lực
-aspect: khía cạnh, tình trạn, diện mạo,
-hypothetical: giả định,
-outright: ngay, tròn vẹn , 1 lần nữa, không giấu giếm
-diverse: đa dạng, phong phú
-particular : cụ thể
-assumption: giả bộ, giả đinh
-established: thành lập
+#pressure(Noun)
+(Force): lực lượng, thế lực
+- Identify: áp suất, sức ép, 
+- sức ép bị đe dọa đến cá nhân hoặc tổ chức
+(influence): sức ép, sự ép buộc, sự thúc bách
+`a strong, often threatening influence on an organization or person`
+ex: the pressure of the work makes me crazy
+- nếu bạn gây sức ép lên ai đó, bạn cố gắng thuyết phục hoặc đe dọa người đó 1 điều gì đó điều gì đó 
+ex: i am under a lot of pressure at work
+(Worry)
+- worry and fear caused(gây ra) bới cảm giác bạn có quá nhiều trách nhiệm và quan tâm
+ex:i have a lot of pressure when i am working on powergate company
+
+#aspect(noun): khía cạnh, tình trạng, diện mạo,
+-identify: a particular feature of or way of thinking about something, esp. something complicated
+ex: there is another aspect of your problem that you are right.
+
+#hypothetical(adjective): giả định, giả thuyết
+
+#outright(advert): ngay lập tực, toàn bộ, hoàn toàn
+identify:`directly and plainly, or immediately instead of stages`
+-They bought their car outright.
+-I told him outright that I think he is making a mistake.
+
+#diverse (adjective): đa dạng, phong phú
+-the information technology has diverse job
+
+#particular(adjective) : cụ thể
+Identify `special`
+- in this particualr case
+`careful`
+- She’s very particular about what she eats.
+
+#assumption(Noun): giả bộ, giả đinh
+`Accepting as true`
+-The plan was based on the assumption that the schedule could be substantially speeded up by adding more people.
+`Control`, assumption of something: làm ra vẻ, sự giả bộ, sự đảm đương, sự gánh vác, sự nhận vào mình
+- Her assumption (sự đảm đương) of the post of ambassador was a significant development.
+- the Assumption (tôn giáo)
+- 
+#established: thành lập
+
+-wrecked: đắm, thất bại
+-skimmed: gầy, đi lướt qua, đi sát qua, gạt chất kem ở sữa, hớt bọt
+-wraps up: đóng gói
+-relevant: liên quan, thích hợp
 for the sake of discussion : vì lợi ích của cuộc thảo luận
 to record the fact : để ghi lại thực tế
 accurate: chính xác
@@ -111,3 +149,12 @@ Schema có thể add thêm property mà không lo gì cả
 - khi ta tiếp cận mongo database bằng bất kỳ hình thức nào như search hay or save or edit or delete thì nó sẽ tạo ra 1 asynchronous action và query sẽ trả về 1 promise 
 
 #advenced feature of javascript that include in es 2017: .then(() => {}) arrow function
+
+#npm install --save cookie-session (manager the cookies)
+-`khi request đến server, cái request đó sẽ đc chuyển đến cookie sesion, cái này sẽ tự động extract tất cả dữ liệu của cookie đó`+
+`và nó sẽ encrypt dữ liệu cái tồn tại bên trong đó xong rồi dữ liệu sẽ đc chuyển cho passport cái này sẽ kéo ra userId ở trong cookie(id này là id đã đc chúng ta serialise trước đó) biến nó thành user model instance, đc thêm vào req object như 'req.user'`
+summary : `passport có 2 function serializeUser, deserializeUser serializeUser để chuyền thông tin như id về browser để save cookie cái này sẽ mã hóa qua cookiesession, desesializeUser là để lấy ra các thông tin từ cookie của client gửi request lên trên server. cái này cần phải giải mã qua cookiesession để`
+
+-`middleware our small functions that can be used to modify incoming requests to our app before they are sent off to route handlers`
+#note :
+-`cookie session is like not really inherently passing data to passport, it's just processing the incoming requests populating that session property right here and then passport accesses the data that exist on res.session`
