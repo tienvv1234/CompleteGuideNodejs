@@ -1,15 +1,15 @@
 # lecture 4 new word
-#preamble(nous): lời nói đầu 
+1. preamble(nous): lời nói đầu 
 ex: `The preamble of the book talks about the technique of java.`
-#handful of(nous) : (một) năm, (một) nhúm, ít (có đếm được) 
+2. handful of(nous) : (một) năm, (một) nhúm, ít (có đếm được) 
 ex: `i get a handful of data from the system`
-#rather (adverb : `trạng từ`): khá, 1 chút, hơn, hơi hơi
+3. rather (adverb : `trạng từ`): khá, 1 chút, hơn, hơi hơi
 -identify :
-1. - `có than so sánh 2 cụm thích cái gì hơn`
+- `có than so sánh 2 cụm thích cái gì hơn`
 ex: i want to create new the database rather than backup the old database
-2. - `nói để chính xác hơn đúng hơn là`
+- `nói để chính xác hơn đúng hơn là`
 ex: these data are wrong, but rather miss the title.
-3. - `phần nào, hơn, khá, đến 1 mức độ nào đó`
+- `phần nào, hơn, khá, đến 1 mức độ nào đó`
 ex: this bug is rather critical
 #tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
 - identify:
