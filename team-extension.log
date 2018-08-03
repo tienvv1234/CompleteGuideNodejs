@@ -1,0 +1,23 @@
+2018-08-03T04:18:54.620Z - info:   [08524] *** FOLDER: d:\project\Complete Guide Node js ***
+2018-08-03T04:18:54.620Z - info:   [08524] VSTSVSCode/1.136.0 (VSCode 1.25.1; Windows_NT 6.3.9600; Node 7.9.0)
+2018-08-03T04:18:54.620Z - debug:  [08524] Looking for an External Context at d:\project\Complete Guide Node js
+2018-08-03T04:18:54.620Z - debug:  [08524] No External Context at d:\project\Complete Guide Node js
+2018-08-03T04:18:54.644Z - debug:  [08524] Looking for TFVC repository at d:\project\Complete Guide Node js
+2018-08-03T04:18:54.644Z - debug:  [08524] TFVC Creating Tfvc object with localPath='undefined'
+2018-08-03T04:18:54.645Z - debug:  [08524] Using TFS proxy: 
+2018-08-03T04:18:54.645Z - debug:  [08524] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe'
+2018-08-03T04:18:54.647Z - debug:  [08524] TFVC Repository created with repositoryRootFolder='d:\project\Complete Guide Node js'
+2018-08-03T04:18:54.649Z - debug:  [08524] TFVC Repository.CheckVersion
+2018-08-03T04:18:54.651Z - debug:  [08524] TFVC: tf add -noprompt -?
+2018-08-03T04:18:54.657Z - debug:  [08524] TFVC: spawned new process (duration: 5ms)
+2018-08-03T04:18:54.664Z - debug:  [08524] TFVC: spawned new process (duration: 6ms)
+2018-08-03T04:18:55.232Z - debug:  [08524] TFVC: add exit code: 0 (duration: 581ms)
+2018-08-03T04:18:55.235Z - debug:  [08524] TFVC Minimum required version: 14.102.0
+2018-08-03T04:18:55.235Z - debug:  [08524] TFVC (TF.exe, TF.cmd) version: 15.129.27725.3
+2018-08-03T04:18:55.236Z - debug:  [08524] TFVC Repository.FindWorkspace with localPath='d:\project\Complete Guide Node js'
+2018-08-03T04:18:55.237Z - debug:  [08524] TFVC: tf workfold -noprompt d:\project\Complete Guide Node js
+2018-08-03T04:18:55.241Z - debug:  [08524] TFVC: spawned new process (duration: 3ms)
+2018-08-03T04:18:55.484Z - debug:  [08524] TFVC: workfold exit code: 100 (duration: 247ms)
+2018-08-03T04:18:55.486Z - debug:  [08524] TFVC errors (via stderr): Unable to determine the workspace. You may be able to correct this by running 'tf workspaces /collection:TeamProjectCollectionUrl'.
+
+2018-08-03T04:18:55.487Z - error:  [08524] Execution of the TFVC command line failed unexpectedly.
