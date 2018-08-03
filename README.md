@@ -11,7 +11,7 @@ ex: i want to create new the database rather than backup the old database
 ex: these data are wrong, but rather miss the title.
 - `phần nào, hơn, khá, đến 1 mức độ nào đó`
 ex: this bug is rather critical
-4.tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
+4. tremendous(adjective): ghê gớm, kinh khủng, khủng khiếp, dữ dội.
 - identify:
 - `great in amount, size, or degree; extremely large` transalate :
 ex: She is under tremendous pressure at work --> `cô ấy đang chịu(ở dưới/dưới áp lực) áp lục lớn trong công việc`
@@ -19,7 +19,7 @@ ex: She is under tremendous pressure at work --> `cô ấy đang chịu(ở dư�
 - (thông tục) rất lớn, bao la, to lớn, rất tốt, khác thường
 ex: 
 
-5.pressure(Noun)
+5. pressure(Noun)
 (Force): lực lượng, thế lực
 - Identify: áp suất, sức ép, 
 - sức ép bị đe dọa đến cá nhân hoặc tổ chức
@@ -32,33 +32,50 @@ ex: i am under a lot of pressure at work
 - worry and fear caused(gây ra) bới cảm giác bạn có quá nhiều trách nhiệm và quan tâm
 ex:i have a lot of pressure when i am working on powergate company
 
-6.aspect(noun): khía cạnh, tình trạng, diện mạo,
+6. aspect(noun): khía cạnh, tình trạng, diện mạo,
 -identify: a particular feature of or way of thinking about something, esp. something complicated
 ex: there is another aspect of your problem that you are right.
 
-#7.ypothetical(adjective): giả định, giả thuyết
+7. hypothetical(adjective): giả định, giả thuyết
 
-8.outright(advert): ngay lập tực, toàn bộ, hoàn toàn
+8. outright(advert): ngay lập tực, toàn bộ, hoàn toàn
 identify:`directly and plainly, or immediately instead of stages`
 -They bought their car outright.
 -I told him outright that I think he is making a mistake.
 
-9.diverse (adjective): đa dạng, phong phú
+9. diverse (adjective): đa dạng, phong phú
 -the information technology has diverse job
 
-10.particular(adjective) : cụ thể
+10. particular(adjective) : cụ thể
 Identify `special`
 - in this particualr case
 `careful`
 - She’s very particular about what she eats.
 
-11.assumption(Noun): giả bộ, giả đinh
+11. assumption(Noun): giả bộ, giả đinh
 `Accepting as true`
 -The plan was based on the assumption that the schedule could be substantially speeded up by adding more people.
 `Control`, assumption of something: làm ra vẻ, sự giả bộ, sự đảm đương, sự gánh vác, sự nhận vào mình
 - Her assumption (sự đảm đương) of the post of ambassador was a significant development.
 - the Assumption (tôn giáo)
-- 
+
+12. pipe(Noun)
+(tube): đường ống, ống dẫn 
+`a tube through which liquids ỏ gases can flow`
+ex: a water pipe
+(Device for Smoking) : tẩu thuốc, ống điếu, cối, điếu
+`a short, narow tube with a small bowl at one end, used for smoking esp. tobacco`
+ex
+(Musical instrument): ống sáo, ống tiêu, ống nhạc hơi, (số nhiều) kén túi 
+`a musical instrument consisting ò a short, narow tube that is played by blowing through it`
+`Pipes are also the metal or wood tubes in an organ(= musical instrument played by pressing keys) that produce sound`
+(advert) đặt ống dẫn, thổi sáo, thổi tiêu, thổi còi ra lệnh
+ex
+(nội động từ) thổi còi, thổi sáo, thổi tiêu, thổi vi vu(gió)
+ex
+
+
+
 12.established: thành lập
 
 -wrecked: đắm, thất bại
@@ -151,10 +168,16 @@ Schema có thể add thêm property mà không lo gì cả
 #advenced feature of javascript that include in es 2017: .then(() => {}) arrow function
 
 #npm install --save cookie-session (manager the cookies)
--`khi request đến server, cái request đó sẽ đc chuyển đến cookie sesion, cái này sẽ tự động extract tất cả dữ liệu của cookie đó`+
+-`khi request đến server, request đó sẽ đc chuyển đến cookie sesion, cái này sẽ tự động extract tất cả dữ liệu của cookie đó`+
 `và nó sẽ encrypt dữ liệu cái tồn tại bên trong đó xong rồi dữ liệu sẽ đc chuyển cho passport cái này sẽ kéo ra userId ở trong cookie(id này là id đã đc chúng ta serialise trước đó) biến nó thành user model instance, đc thêm vào req object như 'req.user'`
 summary : `passport có 2 function serializeUser, deserializeUser serializeUser để chuyền thông tin như id về browser để save cookie cái này sẽ mã hóa qua cookiesession, desesializeUser là để lấy ra các thông tin từ cookie của client gửi request lên trên server. cái này cần phải giải mã qua cookiesession để`
 
 -`middleware our small functions that can be used to modify incoming requests to our app before they are sent off to route handlers`
 #note :
 -`cookie session is like not really inherently passing data to passport, it's just processing the incoming requests populating that session property right here and then passport accesses the data that exist on res.session`
+
+express session 
+the difference between the two is that cookie session stores all the data directly in the cookie, express sesion stores all the data in  some like remote server side data store and then whenever request comes in it takes the id of that sesion and then goes and pull all the relevant data out ò the session store
+- `the big difference between these two is that with express session  we are tryind to store all the data outside the cookie with cookies session we are stuffing everything into the cookie`
+- `the big difference between the two is that with express session we can store as much data as we want to inside of that remote or that session store because that is some big bucket of data that we can post on our server and we can stuff as much stuff in there as we want to, with a cookie we are limited to around 4 kilobytes and that is all we have access to that is all the data we can stuff on the cookie`
+
