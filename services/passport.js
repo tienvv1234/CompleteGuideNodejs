@@ -35,6 +35,8 @@ passport.use(new GoogleStrategy(
                 console.log("exsitingUser");
                 // we already have a record with the given profileId
                 // the first argument will be an air object, this object communicates back to a pasport that maybe somthing went wrong or maybe something didn't quite work the way we expected
+                exsitingUser.abc ="abc";
+                console.log("exsitingUser.abc", exsitingUser.abc);
                 done(null, exsitingUser);
             } else {
                 console.log("new User");
