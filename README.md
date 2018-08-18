@@ -111,7 +111,9 @@ form: hình thưc
 --------------------------------------------
 section 4 lecture 38
 precise: tóm lược (to be precise:để đc chính xác)
-
+pristine: nguyên sơ,
+segregate: tách biệt,
+tear apart: xé lẻ
 # main theory
 - build single project 
 
@@ -144,7 +146,9 @@ for run this project `npm run dev`
 
 #Set Up MongoDb: 
 - `there're two different ways`
-go to mlab.com to create mongo db remote `{user: "tienvv", account: "tienvv" }` 
+go to `mlab.com` to create mongo db remote `{user: "tienvv", account: "tienvv" }` 
+-database dev
+-database pro `tienvvprod` 
 
 - install mongoose `npm install --save mongoose`
 mongoose.connect()
@@ -180,4 +184,5 @@ express session
 the difference between the two is that cookie session stores all the data directly in the cookie, express sesion stores all the data in  some like remote server side data store and then whenever request comes in it takes the id of that sesion and then goes and pull all the relevant data out ò the session store
 - `the big difference between these two is that with express session  we are tryind to store all the data outside the cookie with cookies session we are stuffing everything into the cookie`
 - `the big difference between the two is that with express session we can store as much data as we want to inside of that remote or that session store because that is some big bucket of data that we can post on our server and we can stuff as much stuff in there as we want to, with a cookie we are limited to around 4 kilobytes and that is all we have access to that is all the data we can stuff on the cookie`
+-
 

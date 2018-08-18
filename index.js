@@ -10,11 +10,6 @@ const keys = require('./config/keys');
 require("./models/User");
 require("./services/passport");
 
-let startTime = new Date(Date.now() + 5000);
-let endTime = new Date(startTime.getTime() + 15000);
-var j = schedule.scheduleJob({ start: startTime, end: endTime, rule: '*/1 * * * * *' }, function () {
-    console.log('Time for tea!');
-});
 
 mongoose.Promise = global.Promise
 mongoose.connect(keys.mongoUri, { useNewUrlParser: true });
