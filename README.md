@@ -186,3 +186,5 @@ the difference between the two is that cookie session stores all the data direct
 - `the big difference between the two is that with express session we can store as much data as we want to inside of that remote or that session store because that is some big bucket of data that we can post on our server and we can stuff as much stuff in there as we want to, with a cookie we are limited to around 4 kilobytes and that is all we have access to that is all the data we can stuff on the cookie`
 -
 
+"dev": "concurrently \"npm run server\" \"npm run client\""
+`npm install concurrently` this will run 2 params in the same time
