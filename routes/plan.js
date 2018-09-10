@@ -1,91 +1,42 @@
-var stripe = require('stripe')('sk_test_euhBFP1reSeKIINuupZzw5KR');
-
-
-module.exports = (app) => {
-  app.get('/test', function (req, res) {
-    test().then(function (result) {
-      res.send({
-        status: "success",
-        token: result
-      });
-
-    }, function (error) {
-      res.send({
-        status: "error",
-        message: error.message
-      });
-
-    })
-  });
-
-}
+const stripe = require('stripe')('sk_test_euhBFP1reSeKIINuupZzw5KR');
 
 async function test() {
-  //let plans = await stripe.plans.list();
-  //console.log("plans", plans);
-   //XChFDlSj
-  // const subscription = await stripe.subscriptions.create({
-  //   customer: 'cus_DQ6FfZJHxOCDf8',
-  //   items: [{plan: 'plan_DQ5xyWc2er3UhL'}],
-  //   coupon: 'test',
-  // });
+  const plans = await stripe.plans.list();
+  // console.log("plans", plans);
+  console.log('plans[0].id', plans.data[0].id);
 
- // let coupon1 = await stripe.coupons.retrieve("XChFDlSj");
-
-  //let coupon2 = await stripe.coupons.retrieve("test");
-
-  //console.log('coupon1', coupon1);
-
-  //console.log('coupon2', coupon2);
-
-  //console.log("plans[0].id", plans.data[0].id);
-
-  // let cardToken = await stripe.tokens.create({
-  //   card: {
-  //     exp_month: 10,
-  //     exp_year: 2018,
-  //     number: '4242 4242 4242 4242',
-  //     cvc: 100
-  //   }
-  // })
+  const cardToken = await stripe.tokens.create({
+    card: {
+      exp_month: 10,
+      exp_year: 2018,
+      number: '4242 4242 4242 4242',
+      cvc: 100,
+    },
+  });
   // console.log("cardToken", cardToken)
-  //   console.log("cardToken.id", cardToken.id)
+  console.log('cardToken.id', cardToken.id);
 
-  // let customerStripe = await stripe.customers.create({
-  //   description: 'Customer for tienvv123456@gmail.com',
-  //   email: 'tienvv123456@gmail.com',
-  //   source: cardToken.id // obtained with Stripe.js
-  // })
+  const customerStripe = await stripe.customers.create({
+    description: 'Customer for tienvv1234@gmail.com',
+    email: 'tienvv1234@gmail.com',
+    source: cardToken.id, // obtained with Stripe.js
+  });
 
-  // //console.log("customerStripe", customerStripe)
+  // console.log("customerStripe", customerStripe)
 
-  // console.log("customerStripe", customerStripe.id)
+  console.log('customerStripe', customerStripe.id);
 
 
-  // let subscription = await stripe.subscriptions.create({
-  //   customer: 'cus_DKYpuVYh0HODM5',
-  //   items: [
-  //     {
-  //       plan: 'plan_DQ8XzqtHojTEpJ',
-  //     },
-  //     {
-  //       plan: 'plan_DQ8vAGhut5GWsY',
-  //     }
-  //   ]
-  // });
+  const subscription = await stripe.subscriptions.create({
+    customer: customerStripe.id,
+    items: [
+      {
+        plan: plans.data[0].id,
+      },
+    ],
+  });
 
-  // let subscription1 = await stripe.subscriptions.create({
-  //   customer: 'cus_DKYpuVYh0HODM5',
-  //   items: [
-  //     {
-  //       plan: 'plan_DQ8vAGhut5GWsY',
-  //     },
-  //   ]
-  // });
-
-  // console.log("subscription", subscription.items.data);
-
-  // console.log("subscription", subscription1.items.data);
+  console.log('subscription', subscription);
 
   // stripe.tokens.create({
   //   card: {
@@ -105,9 +56,6 @@ async function test() {
   //     console.log("err", customer);
   //   });
   // });
-
-
-
   // stripe.subscriptions.create({
   //   customer: "cus_DEYf08f0Jkyvqz",
   //   items: [
@@ -158,3 +106,18 @@ async function test() {
 }
 
 
+module.exports = (app) => {
+  app.get('/test', (req, res) => {
+    test().then((result) => {
+      res.send({
+        status: 'success',
+        token: result,
+      });
+    }, (error) => {
+      res.send({
+        status: 'error',
+        message: error.message,
+      });
+    });
+  });
+};
