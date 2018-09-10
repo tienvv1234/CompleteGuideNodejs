@@ -188,3 +188,10 @@ the difference between the two is that cookie session stores all the data direct
 
 "dev": "concurrently \"npm run server\" \"npm run client\""
 `npm install concurrently` this will run 2 params in the same time
+
+`proxy` in package.json of server.
+- ở môi trường dev(localhost) sẽ phải chạy 2 server cho client and server, nên dùng proxy để redirect từ client đến server(điều này sẽ từ động làm khi build lên production) proxy sẽ tự động điểu hướng những router mà đc config trong package.json đều đc đưa đến target
+- ở môi trường prod sẽ chỉ có 1 server chạy node/express api còn client sẽ đc build thành public assets là html và javascript trong thư mục build
+- khác port đc tính như là khác domain
+- cùng domain browser sẽ tự động include cookies by default và ngược lại sẽ không
+- khi lên prod sẽ cùng chung 1 domain nên không còn sợ vấn đề cookie không include vào req
