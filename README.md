@@ -195,3 +195,31 @@ the difference between the two is that cookie session stores all the data direct
 - khác port đc tính như là khác domain
 - cùng domain browser sẽ tự động include cookies by default và ngược lại sẽ không
 - khi lên prod sẽ cùng chung 1 domain nên không còn sợ vấn đề cookie không include vào req
+
+#Async/Await
+- make sure your node version 8 at least
+- Fetch function ES2015: when we make request with fetch, it will return a promise. that promise is resolved with an object that represents the underline request
+NOTE: any time we work with a promise to get kind of a little notification or a little callback that the promise has been resolved we'd chain on a dot then statement like so this then(.then) will be called.
+example: es 2015
+function fetchAlbums(){
+  fetch('https://rallycoding.herokuapp.com/api/music_albums').then(res => res.json()). get the 
+  then(json => console.log(json)) // this will let we access to the actual json is resolved) // this will let we access to the actual json is resolved. note this have two promises
+}
+fetchAlbums();
+
+example: es 2017
+async function fetchAlbums(){
+  try{
+    const res = await fetch('https://rallycoding.herokuapp.com/api/music_albums')
+    const json = await res.json().
+  
+    console.log(Json);
+  }catch(error){
+    console.log(error)
+  }
+}
+
+// arrow function
+const fetchAlbums = async () = {}
+
+fetchAlbums();

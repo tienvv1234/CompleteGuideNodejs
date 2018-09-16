@@ -34,25 +34,37 @@ passport.use(new GoogleStrategy(
     clientSecret: keys.googleClientSecret,
     callbackURL: '/auth/google/callback',
     proxy: true,
-  }, (accessToken, refreshToken, profile, done) => {
+  }, async (accessToken, refreshToken, profile, done) => {
     // advenced feature of javascript that include in es 2017: .then(() => {}) arrow function
     // the query return a promise
-    User.findOne({ googleId: profile.id }).then((exsitingUser) => {
-      if (exsitingUser) {
-        console.log('exsitingUser');
-        // we already have a record with the given profileId
-        // the first argument will be an air object,
-        // this object communicates back to a pasport
-        // that maybe somthing went wrong or maybe something didn't quite work the way we expected
-        done(null, exsitingUser);
-      } else {
-        console.log('new User');
-        // we don't have a user record with this Id, make a new record
-        // a model instance
-        new User({
-          googleId: profile.id,
-        }).save().then(user => done(null, user));
-      }
-    });
+    // User.findOne({ googleId: profile.id }).then((exsitingUser) => {
+    //   if (exsitingUser) {
+    //     console.log('exsitingUser');
+    //     // we already have a record with the given profileId
+    //     // the first argument will be an air object,
+    //     // this object communicates back to a pasport
+    //     // that maybe somthing went wrong or maybe something didn't quite work the way we expected
+    //     done(null, exsitingUser);
+    //   } else {
+    //     console.log('new User');
+    //     // we don't have a user record with this Id, make a new record
+    //     // a model instance
+    //     new Use  r({
+    //       googleId: profile.id,
+    //     }).save().then(user => done(null, user));
+    //   }
+    // });
+    const exsitingUser = await User.findOne({ googleId: profile.id });
+    if (exsitingUser) {
+      // we already have a record with the given profileId
+      // the first argument will be an air object,
+      // this object communicates back to a pasport
+      // that maybe somthing went wrong or maybe something didn't quite work the way we expected
+      return done(null, exsitingUser);
+    }
+    // we don't have a user record with this Id, make a new record
+    // a model instance
+    const newUser = await new User({ googleId: profile.id }).save();
+    done(null, newUser);
   },
 ));
