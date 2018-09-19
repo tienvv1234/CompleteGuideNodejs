@@ -79,8 +79,8 @@ async function test() {
   // );
 
 
-  //cus_DQ6FfZJHxOCDf8, sub_DQ6FojKuWIEopa, plan_DQ5xyWc2er3UhL, licensed
-  //cus_DQ6NUxRWlSBsOL, sub_DQ6Nr8kGLONBQS si_DQ6NVlldHzk3z0, plan_DQ5uaaLOaNyvTo, metered usage
+  // cus_DQ6FfZJHxOCDf8, sub_DQ6FojKuWIEopa, plan_DQ5xyWc2er3UhL, licensed
+  // cus_DQ6NUxRWlSBsOL, sub_DQ6Nr8kGLONBQS si_DQ6NVlldHzk3z0, plan_DQ5uaaLOaNyvTo, metered usage
   stripe.subscriptions.retrieve(
     "sub_DSKn6UueMmAJzt",
     function (err, subscription) {
