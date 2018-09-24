@@ -20,7 +20,7 @@ module.exports = (app) => {
     res.send(req.user);
   });
 
-  app.get('/api/curent_user', (req, res) => {
+  app.get('/api/current_user', (req, res) => {
     // res.session, cookie session library extracts that
     // data out of the cookie and then assigns it to this res.session properties
     // res.session right contains the data that pasport is attemping to store inside of the cookie
