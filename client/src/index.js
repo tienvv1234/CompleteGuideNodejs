@@ -11,7 +11,7 @@ const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 console.log('store', store)
 console.log(2)
 
-// proveder tag it is a react component that knows how to read changes from our redux store, any time thr redux store
+// proveder tag it is a react component that knows how to read changes from our redux store, any time the redux store
 // gets some new states produced inside of it, the provider will inform all of its children components.
 
 ReactDOM.render(
