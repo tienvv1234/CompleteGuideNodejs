@@ -5,4 +5,6 @@ module.exports = {
   mongoUri: process.env.MONGO_URI,
   cookieKey: process.env.COOKIE_KEY,
   googleRedirectURI: 'https://bayou.herokuapp.com',
+  stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+  stripeSecretKey: process.env.STIPE_SECRET_KEY,
 };

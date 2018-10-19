@@ -9,6 +9,7 @@ const passport = require('passport');
 const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
+require('./chapter1/chap1');
 
 
 mongoose.Promise = global.Promise;

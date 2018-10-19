@@ -223,3 +223,5 @@ async function fetchAlbums(){
 const fetchAlbums = async () = {}
 
 fetchAlbums();
+
+Variable Environment: create .env file for react app

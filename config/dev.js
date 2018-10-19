@@ -5,4 +5,6 @@ module.exports = {
   googleClientSecret: 'GvHeg-NbesCpniiNhRDFK099',
   mongoUri: 'mongodb://admin:tien1991@ds161610.mlab.com:61610/email-dev-tienvv',
   cookieKey: 'sdlkjflsdjflsjdflnicvpawermlawmczcxozvw',
+  stripePublishableKey: 'pk_test_AQVPg18E5YrS1TQ6tffizx4S',
+  stripeSecretKey: 'sk_test_5scqpcqrZrEtWqyWwjkepN95',
 };
