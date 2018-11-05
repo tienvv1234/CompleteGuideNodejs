@@ -129,7 +129,7 @@ tear apart: xé lẻ
 
 git remote add heroku https://git.heroku.com/damp-shelf-61146.git
 
-# heroku login
+# heroku login (tienvv1234@gmail.com/Tiendaica)
 # heroku create
 # git remote add heroku (url)
 # git push heroku master
