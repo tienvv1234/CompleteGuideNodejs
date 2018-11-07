@@ -225,3 +225,7 @@ const fetchAlbums = async () = {}
 fetchAlbums();
 
 Variable Environment: create .env file for react app
+
+module body-parser midderware this modules will push the request param of post and put method into req.body
+
+- next middleware is kind of being like done callback

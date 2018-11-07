@@ -32,3 +32,14 @@ NOTE: react redux lib is lib whose sole purpose is to make sure that react and r
 create instance of redux store, first argument is all the reducers 
 
 anytime the redux store gets some new states produced inside of it, the Provider will inform al lof it's children components, so essentially everything that the app renders that some new state is avaiable and it will update all of those different components with the new state
+
+- file name lowercase to indicate that we are  going to export a function `as opposed to` a component class or something like that 
+
+- authReducer this file export a function, the function we called with 2 arguments
+- the first will be our state object that is responsible for this reducer
+- the second object would be our action object
+- inside of the reducer, we will switch over the actions type
+- index.js in we are going to import the author reducer into here and combined it with a combined reducers call
+- pass reducers to createStore
+
+- npm run build is build production and all file will go to clien/build/static/

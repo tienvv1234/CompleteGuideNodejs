@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 // tell passport keep track of our user session,.. for lack of a better term by ussing cookies
 const passport = require('passport');
+const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
@@ -16,6 +17,7 @@ mongoose.connect(keys.mongoUri, { useNewUrlParser: true });
 
 const app = express();
 
+app.use(bodyParser.json());
 // use midder ware add cookiesession
 // essentially telling passport to use cookies to manage our authentication
 app.use(cookieSession({
@@ -30,6 +32,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require('./routes/authRoutes')(app);
+require('./routes/billingRoutes')(app);
 require('./routes/plan')(app);
 
 const PORT = process.env.PORT || 5000;

@@ -8,6 +8,7 @@ const { Schema } = mongoose;
 // Schema có thể add thêm property mà không lo gì cả
 const userSchema = new Schema({
   googleId: String,
+  credits: { type: Number, default: 0}, 
 });
 
 
