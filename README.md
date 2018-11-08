@@ -229,3 +229,13 @@ Variable Environment: create .env file for react app
 module body-parser midderware this modules will push the request param of post and put method into req.body
 
 - next middleware is kind of being like done callback
+
+heroku documentation
+
+- postinstall customize the build process and will run this command automatically after installing the server side npm modules
+
+`bower` is a client side javascript dependency management system and grundt is a module or a task runner
+
+push to heroku -> heroku installs server deps --> heroku runs 'heroku-postbuild' --> we tell heroku to install client deps --> we tell heroku to run 'npm run build'
+
+"heroku-postbuild": "" // this script will be called automatically after server dependencies have installed
