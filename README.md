@@ -239,3 +239,11 @@ heroku documentation
 push to heroku -> heroku installs server deps --> heroku runs 'heroku-postbuild' --> we tell heroku to install client deps --> we tell heroku to run 'npm run build'
 
 "heroku-postbuild": "" // this script will be called automatically after server dependencies have installed
+
+You can install a npm package called 'del-cli', and append the following command at the end of the heroku-postbuild script:
+
+&& del-cli client/node_modules 
+
+so the script now looks like this:
+
+"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules" 
