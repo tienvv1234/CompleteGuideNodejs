@@ -8,9 +8,8 @@ const { Schema } = mongoose;
 // Schema có thể add thêm property mà không lo gì cả
 const userSchema = new Schema({
   googleId: String,
-  credits: { type: Number, default: 0}, 
+  credits: { type: Number, default: 0 },
 });
-
 
 // mongoose.model('users'. userSchema); `note`
 // - mongoose chỉ tạo khi nó không tồn tại nếu tồn tại rồi sẽ lấy ra
