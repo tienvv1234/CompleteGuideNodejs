@@ -247,3 +247,30 @@ You can install a npm package called 'del-cli', and append the following command
 so the script now looks like this:
 
 "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules" 
+
+- mongo size limit for a single record = 4 mb udpate to 16 mb
+
+Hi Stephen, just to provide some update. The actual maximum size of the documents on the current releases of mongo db is 16mb. It was increased from 4 to 16 around 2010.
+
+https://docs.mongodb.com/manual/reference/limits/
+
+BSON Documents
+
+BSON Document Size
+
+The maximum BSON document size is 16 megabytes.
+
+The maximum document size helps ensure that a single document cannot use excessive amount of RAM or, during transmission, excessive amount of bandwidth. To store documents larger than the maximum size, MongoDB provides the GridFS API. See mongofiles and the documentation for your driver for more information about GridFS.
+
+Best Regards,
+
+Rafael
+
+--https://docs.mongodb.com/manual/reference/program/mongofiles/#bin.mongofiles
+--https://docs.mongodb.com/manual/applications/drivers/
+
+#documents
+`Mongoose documents represent a one-to-one mapping to documents as stored in MongoDB. Each document is an instance of its Model.`
+
+#Subdocuments 
+`Subdocuments are documents embedded in other documents. In Mongoose, this means you can nest schemas in other schemas. Mongoose has two distinct notions of subdocuments: arrays of subdocuments and single nested subdocuments.`
