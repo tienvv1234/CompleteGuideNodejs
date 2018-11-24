@@ -269,8 +269,12 @@ Rafael
 --https://docs.mongodb.com/manual/reference/program/mongofiles/#bin.mongofiles
 --https://docs.mongodb.com/manual/applications/drivers/
 
+
+
 #documents
 `Mongoose documents represent a one-to-one mapping to documents as stored in MongoDB. Each document is an instance of its Model.`
 
 #Subdocuments 
 `Subdocuments are documents embedded in other documents. In Mongoose, this means you can nest schemas in other schemas. Mongoose has two distinct notions of subdocuments: arrays of subdocuments and single nested subdocuments.`
+
+- so we usually make use of some document collection like this when we ant to make some type of ownership relationship very clear.

@@ -26,7 +26,6 @@ async function test() {
 
   console.log('customerStripe', customerStripe.id);
 
-
   const subscription = await stripe.subscriptions.create({
     customer: customerStripe.id,
     items: [
@@ -68,7 +67,6 @@ async function test() {
   // }
   // );
 
-
   // stripe.plans.list(
   //   function (err, plans) {
   //     if(err){
@@ -78,18 +76,16 @@ async function test() {
   //   }
   // );
 
-
   // cus_DQ6FfZJHxOCDf8, sub_DQ6FojKuWIEopa, plan_DQ5xyWc2er3UhL, licensed
   // cus_DQ6NUxRWlSBsOL, sub_DQ6Nr8kGLONBQS si_DQ6NVlldHzk3z0, plan_DQ5uaaLOaNyvTo, metered usage
-  stripe.subscriptions.retrieve(
-    "sub_DSKn6UueMmAJzt",
-    function (err, subscription) {
-      // asynchronously called
-      console.log("subscription", subscription);
-      console.log("subscription", subscription.discount.coupon.id);
-    }
-  );
-
+  stripe.subscriptions.retrieve('sub_DSKn6UueMmAJzt', function(
+    err,
+    subscription,
+  ) {
+    // asynchronously called
+    console.log('subscription', subscription);
+    console.log('subscription', subscription.discount.coupon.id);
+  });
 
   // // stripe.usageRecords.create("si_DQ8vgsdRJogwh5", {
   // //   quantity: 15,
@@ -102,22 +98,23 @@ async function test() {
   // //   console.log("usageRecord", usageRecord);
   // // });
   // send lại report vào event invoice.create nếu period không hay thôi thì nên cộng thêm 1 ngày
-
 }
 
-
-module.exports = (app) => {
+module.exports = app => {
   app.get('/test', (req, res) => {
-    test().then((result) => {
-      res.send({
-        status: 'success',
-        token: result,
-      });
-    }, (error) => {
-      res.send({
-        status: 'error',
-        message: error.message,
-      });
-    });
+    test().then(
+      result => {
+        res.send({
+          status: 'success',
+          token: result,
+        });
+      },
+      error => {
+        res.send({
+          status: 'error',
+          message: error.message,
+        });
+      },
+    );
   });
 };
