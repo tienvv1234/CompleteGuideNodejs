@@ -7,4 +7,5 @@ module.exports = {
   cookieKey: 'sdlkjflsdjflsjdflnicvpawermlawmczcxozvw',
   stripePublishableKey: 'pk_test_AQVPg18E5YrS1TQ6tffizx4S',
   stripeSecretKey: 'sk_test_5scqpcqrZrEtWqyWwjkepN95',
+  sendGridKey: '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',
 };

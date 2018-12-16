@@ -7,4 +7,5 @@ module.exports = {
   googleRedirectURI: 'https://bayou.herokuapp.com',
   stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
   stripeSecretKey: process.env.STIPE_SECRET_KEY,
+  sendGridKey: process.env.SEND_GRID_KEY,
 };

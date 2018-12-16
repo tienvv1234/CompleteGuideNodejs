@@ -278,3 +278,66 @@ Rafael
 `Subdocuments are documents embedded in other documents. In Mongoose, this means you can nest schemas in other schemas. Mongoose has two distinct notions of subdocuments: arrays of subdocuments and single nested subdocuments.`
 
 - so we usually make use of some document collection like this when we ant to make some type of ownership relationship very clear.
+
+sendgrid is mail provider they are the people who are going to actually send emails out to our users
+
+service/Mailer.js has a capital M because exports a class, passport has a lower case P bacause it doesn't actually export anything at all.
+
+bệnh gan có hư và thực
+hư là yếu thực là mạnh(dư)
+đo áp huyết tay phải
+cao là thực, thấp là hư
+có 2 cái 
+1 là khí thực (hạ khí xuống)
+2 huyết thực (nếu cao hạ huyết xuống)
+(hư: con hư bổ mẹ và mẹ của gan là thận, như vậy phải làm thận khỏe bằng cách ăn nhiều cay)
+dưới bảy mươi là hàn trên 80 là nhiệt
+
+số trên là khí số dưới là huyết (giữ khí ở 120 130 ,giữ huyết ở 70 80)
+hỏa --> thổ --> kim --> thủy --> mộc
+tim --> Lá lách hoặc tì vị --> phổi --> thận --> gan
+đắng --> ngọt --> cay --> mặn --> chua
+gan mà thực thì bớt ăn nóng đi 
+
+đò nóng là những đò cay, đắng, ngọt
+
+đắng có 2 loại: 
+- dương như cafe, bbq, --> làm cho tim mạnh lên, làm cho ap huyết tăng lên
+- âm như thổ khoa tim sen --> làm mát tim, hạ áp huyết
+
+khi ăn gì nhịp tim tăng lên thì sẽ là nóng ngược lại là mát
+
+giữ huyết ở 70 80
+món bổ của ông bà dưa chua hoặc phở
+ngọt cho nhiệt độ(ngọt làm ra thấp và thấp là dữ lại cái hơi ẩm hởi nóng, nóng hầm hầm)
+thấp nhiệt, thấp hàn(phong thấp lạnh là hàn lấy nhiệt, phong thất nhiệt là nóng lấy hàn để chữa)
+
+đường để cho bao tử co bóp(vì tì vị chuyển hóa thức ăn thành chất lỏng bao gồm cả bao tử)
+
+tế bào đường ruột sống 49 ngày
+tế bào gan sống 350--> 500 ngày
+
+làm sao để biết cơ thể đủ hay dư
+
+đường(đường khác chát ngọt, chất ngọt không phải đường đường cát vàng và trằng 2 loại này là tốt nhưng đường cát vàng làm tăng tuổi thọ)
+đưởng phải có những yếu tố này: cho năng lượng (sức khỏe) + nhiệt lượng
+ông này hồi xưa tập võ uống nữa kg đường T_T
+tiêu chuẩn đường 1979 của y tế thế giới
+đói là 100/ 140 mg/dl no từ 140 đến 200mg/dl
+tiêu chuẩn bây h ai trên 110mg/dl là bị tiểu đường
+tiêu chuẩn đường rút xuống còn 80
+khi bị thiếu đường đầu tay mình lạnh
+đường hóa tinh bột làm nghẹt ống lọc thận
+đường cát vàng là đường mía
+
+uống nc nhiều mất muối, thiếu muối loãng xương, mất chí nhớ
+khát nước thì uống từng hụm một không nên tu nhiều
+thiếu chua thì gân co lại, thừa thì trùng gân
+
+đo ap huyết tay trái (130 140, 80 90, 70 80)
+tay phải là nhiệt hàn 
+
+`khí lực bơm máu mạnh hay yếu nhờ số đầu` --> là systolic số thứ 2 là diastolic
+đường cao làm tăng cholesterol và không tập sẽ đóng mỡ
+
+doducngockc@gmail.com
