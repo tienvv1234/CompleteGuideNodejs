@@ -43,3 +43,8 @@ anytime the redux store gets some new states produced inside of it, the Provider
 - pass reducers to createStore
 
 - npm run build is build production and all file will go to clien/build/static/
+
+#redux form
+just react: we would have to store all this data right here on the lead (SurveyField)(the lead is the lowest common parent(SurveyNew Component))
+redux: easier every single time that a user enters some input into a survey field maybe that calls an action creator and updates the state and redux, call typing calls action creator, updates state in redix store, so maybe the redux store will contain the text from each of these fields then comunicatiing that data down to the survey form starts to get really easy
+we can connect the survey form of view to our redux store just as we have done previously using that connect helper, so we would say in this case survey form review can use connect to pull data out of redux

@@ -341,3 +341,5 @@ tay phải là nhiệt hàn
 đường cao làm tăng cholesterol và không tập sẽ đóng mỡ
 
 doducngockc@gmail.com
+
+#tim hieu ve mo hinh mvvm, mvp
