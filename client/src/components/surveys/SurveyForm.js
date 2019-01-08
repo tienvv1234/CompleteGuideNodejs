@@ -29,9 +29,13 @@ class SurveyForm extends Component {
 
   render() {
     // the function handleSubmit from the reduxForm
+    // <form onSubmit={this.props.handleSubmit(this.props.onSurveyFormSubmit)}> this have no parentheses -->() because we are not invoking on surveys submit so we do not have a set of parentheses after it
+    // remember if we passed a set or if we placed a set of parentheses right here that call back function would be call instant that our javascript interperte evalueted this line of code. and we don't that 
+    // we want to only call this function after the user has submitted or attempt to dismiss the form
+    // note nếu thêm this.props.onSurveyFormSubmi() function sẽ call function này khi mà render nếu bỏ this.props.onSurveyFormSubmi thi nó sẽ call khi người dùng ấn vào submit form
     return (
       <div>
-        <form onSubmit={this.props.handleSubmit(values => console.log(values))}>
+        <form onSubmit={this.props.handleSubmit(this.props.onSurveyFormSubmit)}>
           {this.renderFields()}
           <Link to="/surveys" className="red btn-flat white-text">
             Cancel
