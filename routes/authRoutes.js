@@ -7,7 +7,7 @@ module.exports = (app) => {
     }));
 
   app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
-    console.log('req.user', req.user);
+    console.log(2);
     res.redirect('/surveys');
     // res.json({
     //   data: req.user,
@@ -28,7 +28,7 @@ module.exports = (app) => {
     // res.session right contains the data that pasport is attemping to store inside of the cookie
     // res.session is passport.serializeUser done(null, user.id); it is user.id
     // res.send(res.session);
-
+    console.log('current');
     res.send(req.user);
   });
 };

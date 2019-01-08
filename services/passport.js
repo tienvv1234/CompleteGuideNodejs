@@ -35,6 +35,7 @@ passport.use(new GoogleStrategy(
     callbackURL: '/auth/google/callback',
     proxy: true,
   }, async (accessToken, refreshToken, profile, done) => {
+    console.log(1);
     // advenced feature of javascript that include in es 2017: .then(() => {}) arrow function
     // the query return a promise
     // User.findOne({ googleId: profile.id }).then((exsitingUser) => {
@@ -55,16 +56,20 @@ passport.use(new GoogleStrategy(
     //   }
     // });
     const exsitingUser = await User.findOne({ googleId: profile.id });
+    console.log(1);
     if (exsitingUser) {
+      console.log(1);
       // we already have a record with the given profileId
       // the first argument will be an air object,
       // this object communicates back to a pasport
       // that maybe somthing went wrong or maybe something didn't quite work the way we expected
       return done(null, exsitingUser);
     }
+    console.log(1);
     // we don't have a user record with this Id, make a new record
     // a model instance
     const newUser = await new User({ googleId: profile.id }).save();
+    console.log(1);
     done(null, newUser);
   },
 ));
