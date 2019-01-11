@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import SurveyForm from './SurveyForm';
 import SurveyFormReview from './SurveyFormReview';
+import { reduxForm } from 'redux-form'; 
 
 class SurveyNew extends Component {
   //component lvl states
@@ -9,19 +10,28 @@ class SurveyNew extends Component {
 
   renderContent() {
     if (this.state.showFormReview) {
-      return <SurveyFormReview />;
+      return (
+        <SurveyFormReview
+          onCancel={() => this.setState({ showFormReview: false })}
+        />
+      );
     }
 
-    return <SurveyForm onSurveyFormSubmit={() => this.setState({ showFormReview: true })} />;
+    return (
+      <SurveyForm
+        onSurveyFormSubmit={() => this.setState({ showFormReview: true })}
+      />
+    );
   }
 
   render() {
     return (
-      <div>
-        {this.renderContent()}
-      </div>
+      <div>{this.renderContent()}</div>
     );
   }
 }
 
-export default SurveyNew;
+// export default SurveyNew;
+export default reduxForm({
+  form: 'surveyForm'
+})(SurveyNew)

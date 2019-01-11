@@ -55,3 +55,5 @@ redux: easier every single time that a user enters some input into a survey fiel
 we can connect the survey form of view to our redux store just as we have done previously using that connect helper, so we would say in this case survey form review can use connect to pull data out of redux
 
 redux-form.com
+
+withRouter Helper is provided by react router 

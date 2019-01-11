@@ -5,16 +5,11 @@ import { reduxForm, Field } from 'redux-form'; // reduxForm helper here is what 
 import { Link } from 'react-router-dom';
 import SurveyField from './SurveyField';
 import validateEmails from '../../utils/validateEmails';
-const FIELDS = [
-  { label: 'Survey Title', name: 'title' },
-  { label: 'Subject Line', name: 'subject' },
-  { label: 'email Body', name: 'body' },
-  { label: 'Recipient List', name: 'emails' },
-];
+import formFields from './formFields';
 
 class SurveyForm extends Component {
   renderFields() {
-    return _.map(FIELDS, ({ label, name }) => {
+    return _.map(formFields, ({ label, name }) => {
       return (
         <Field
           key={name}
@@ -29,7 +24,7 @@ class SurveyForm extends Component {
 
   render() {
     // the function handleSubmit from the reduxForm
-    // <form onSubmit={this.props.handleSubmit(this.props.onSurveyFormSubmit)}> this have no parentheses -->() because we are not invoking on surveys submit so we do not have a set of parentheses after it
+    // <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}> this have no parentheses -->() because we are not invoking on surveys submit so we do not have a set of parentheses after it
     // remember if we passed a set or if we placed a set of parentheses right here that call back function would be call instant that our javascript interperte evalueted this line of code. and we don't that 
     // we want to only call this function after the user has submitted or attempt to dismiss the form
     // note nếu thêm this.props.onSurveyFormSubmi() function sẽ call function này khi mà render nếu bỏ this.props.onSurveyFormSubmi thi nó sẽ call khi người dùng ấn vào submit form
@@ -55,9 +50,9 @@ function validate(values) {
   // we set in there and pass it as a prop to our custom field component (SurveyField)
   const errors = {};
 
-  errors.emails = validateEmails(values.emails || '');
+  errors.recipients = validateEmails(values.recipients || '');
 
-  _.each(FIELDS, ({ name }) => {
+  _.each(formFields, ({ name }) => {
     if (!values[name]) {
       errors[name] = `You must provide a ${name}`;
     }
@@ -68,7 +63,9 @@ function validate(values) {
 
 // the reduxForm allows our component to communicate with the redux store at the top of our application that is enclosed by that provider tag
 // the function validate will automatically run when user submit the form
+// this is reduxForm helper
 export default reduxForm({
   validate,
-  form: 'surveyForm',
+  form: 'surveyForm', // this will return reduxForm with key 'surveyForm'
+  destroyOnUnmount: false // default is true and will remove all values of fields, if false will keep the values for all fields, we tell reduxForm don't try to get rid of the values
 })(SurveyForm);
