@@ -343,3 +343,10 @@ tay phải là nhiệt hàn
 doducngockc@gmail.com
 
 #tim hieu ve mo hinh mvvm, mvp
+
+- Local Tunnel
++ install npm install -save localtunnel
++ script run packagejson "webhook": "lt -p 5000 -s tiensubdomain"  -s is subdomain
+
+lodash Chain(array) có thể sử dụng nhiều function đằng sau 1 lúc như .sort().reverse().sort
++ nhận vào 1 array và cuối cùng phải .values() để trả lại kết quả
