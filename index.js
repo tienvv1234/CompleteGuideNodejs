@@ -13,10 +13,7 @@ require('./models/Survey');
 require('./services/passport');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(
-  keys.mongoUri,
-  { useNewUrlParser: true },
-);
+mongoose.connect(keys.mongoUri, { useNewUrlParser: true });
 
 const app = express();
 
